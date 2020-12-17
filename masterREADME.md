@@ -7,6 +7,7 @@ A mock-website for a wildlife reserve, populated with various species of antelop
 
 
 
+
 /Requirements and Features/
 
 
@@ -31,6 +32,7 @@ In 'quiz.js' I've constructed a loop that, on each iteration, randomly selects a
 (Create and populate a JavaScript array with one or more values and display the contents on your page)  
 
 in 'gallery.js I've populated an entire page, via insertAdjacentHTML, with the contents of an large array.
+
 
 
 

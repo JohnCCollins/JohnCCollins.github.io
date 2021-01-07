@@ -1,0 +1,130 @@
+/* CSS */
+
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    background-color: rgb(88, 35, 88);
+    background-image: linear-gradient( rgb(88, 35, 88) 30%, rgb(185, 135, 179));
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+/* header */
+.main-header {
+    height: 100px;
+    width: 100%;
+    background-color:  rgb(250, 132, 77);
+    text-align: center;
+    padding-top: 10px;
+}
+
+/* main */
+main {
+    margin-bottom: 88px;
+}
+
+.container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: auto;
+    padding: 60px;
+    background-color: rgb(88, 35, 88);
+    background-image: url(img/pexels-bianca-marolla-822478.jpg);
+    background-size: cover;  
+}
+
+a,
+a:visited {
+    color: black;  
+}
+
+.portal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(250, 132, 77);
+    margin: 10px;
+    margin-bottom: 30px;
+    width: 99%;
+    text-align: center;
+    box-shadow: 5px 5px 5px black;
+    border-radius: 10%;
+}
+
+.portal:hover {
+    transform: scale(1.025);
+}
+
+.img-header {
+    background-color: rgb(250, 132, 77);
+    margin-bottom: auto;
+    border-radius: 2%;
+}
+
+.gallery {
+    background-image: url(img/sable1.jpg);
+    background-size: cover;
+}
+
+.quiz-start {
+    background-image: url(img/bongo1.jpg);
+    background-size: cover;
+}
+
+.about {
+    background-image: url(img/pexels-oleg-magni-861339.jpg);
+    background-size: cover;
+}
+
+/* footer */
+.main-footer {
+    display: flex;
+    justify-content: center;
+    height: 10vh;
+}
+
+
+/* Media Queries */
+
+@media(min-width: 728px) {
+
+    /* main */
+    main {
+        margin-bottom: 20px;
+    }    
+
+    .container {      
+        justify-content: space-evenly;
+    }
+
+    .portal {
+        height: 400px;
+    }
+
+    .quiz-start {
+        width: 45%;
+    }
+
+    .gallery {
+        width: 45%;
+    }
+
+    .about {
+        width: 95%;
+    }
+
+}
+
+@media(min-width: 1090px) {
+    
+    /* main */
+    .portal {
+        height: 60vh; 
+        width: 30%;
+    }
+}

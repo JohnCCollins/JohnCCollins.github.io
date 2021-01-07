@@ -1,0 +1,164 @@
+
+/* CSS */
+
+* {
+    box-sizing: border-box;
+    text-decoration: none;  
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    background-color: rgb(88, 35, 88);
+    background-image: url(img/pexels-bianca-marolla-822478.jpg);
+    background-size: 4000px;
+}
+
+/* properties for elements in header */
+.main-header {
+    display: flex;
+    flex-flow: row wrap;
+    margin-bottom: 20px;
+    padding-top: 3px;
+    height: 100px;
+    width: 100%;
+    background-color:  rgb(250, 132, 77);
+    text-align: center;
+}
+
+.title {
+    width: 100%;
+}
+
+.go {
+    margin: auto;
+    height: 0px;
+    width: 30%;
+    color: aliceblue;
+    text-shadow: 1px 1px 1px black;
+}
+
+.lA {
+    text-align: left;
+}
+
+.lC {
+    text-align: right;
+}
+
+a:visited {
+    color: aliceblue;
+}
+
+a:hover {
+    color: rgb(88, 35, 88);    
+}
+
+/* properties for elements in main */
+main {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    margin: auto;
+    text-shadow: 1px 1px 1px black;
+}
+
+.container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    flex-direction: column;
+    width: 85%;
+    margin: auto;
+}
+
+img {
+    height: 25%;
+    width: 85%;
+    margin: auto;
+    margin-top: 10px;
+    border-radius: 25%;
+    box-shadow: 5px 5px 5px black;
+}
+
+.species {
+    color: aliceblue;
+    margin: auto;
+    margin-top: 50px;  
+}
+
+.bio {
+    margin: 40px;
+    margin-top: 20px;
+    color: lightgray;
+}
+
+/* footer */
+.main-footer {
+    display: flex;
+    justify-content: center;
+    height: 10vh;
+    color: darkgray;
+}
+
+
+/* MEDIA QUERIES */
+
+@media(min-width: 768px) {
+    
+    /* header */
+    .lA {
+        width: 85%;
+        text-align: left;
+        padding-left: 15px;
+    }
+
+    .lB,
+    .lC {
+        width: 7.5%;
+    }
+
+    .lC {
+        padding-right: 15px;
+        text-align: right;
+    }
+    
+    /* main */
+    main {
+        width: 85%;
+    }
+
+    .container {
+        width: 50%;
+        height: 400px;
+        margin-bottom: 65px;  
+    }
+
+    img {
+        height: 60%;
+        width: 80%;
+    }
+
+}
+
+@media(min-width: 1000px) {
+   
+    /* main */
+    main {
+        width: 80%;
+    }
+
+    .container {
+        width: 33%;
+        margin-bottom: 70px;
+    }
+
+    img {
+        width: 85%; 
+    }
+
+    .bio {
+        margin: 20px;
+    }
+}
